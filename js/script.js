@@ -14,5 +14,10 @@ $(function(){
 $(function(){
   $('p').each(function( index, elem ) {
     $( elem ).text('paragraf ' + index);
-  });
+  }) .css('color', 'red');
+});
+
+$(function(){
+  var li = $('nav').find('li').last();
+  li.css("color", "red");
 });
